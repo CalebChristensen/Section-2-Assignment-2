@@ -1,0 +1,12 @@
+<label>User Name Creator!</label>
+<br />
+<input
+  type="text"
+  class="form-control"
+  [(ngModel)]="userName">
+  <br /><br />
+  <button 
+  class="btn btn-warning"
+  [disabled]='!userName'
+  (click)="clearSearch()">Clear Username</button>
+  <p>"You have created the new user name {{ userName }}..."</p>
